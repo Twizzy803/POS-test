@@ -8,7 +8,7 @@ Aplikasi sistem kasir modern berbasis web yang dibangun menggunakan **Laravel (B
 
 Untuk memastikan aplikasi berjalan dengan optimal, proyek ini dikembangkan dan diuji menggunakan spesifikasi berikut:
 
-- **Laravel Framework `13.19.0`
+- **Laravel Framework** `13.19.0`
 - **PHP Version:** `8.3.6 (cli)`
 - **Node Package Manager (NPM):** `11.6.2`
 - **pnpm Version:** `10.23.0`
