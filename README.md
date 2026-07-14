@@ -51,3 +51,7 @@ Ikuti langkah-langkah berikut untuk memasang aplikasi di lingkungan lokal Anda:
     - php artisan serve
     - pnpm run dev
 
+  ## Kredensial Akun uji coba
+  - admin@gmail.com|password123
+  - kasir@gmail.com|password123
+
