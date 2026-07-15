@@ -54,6 +54,7 @@ Ikuti langkah-langkah berikut untuk memasang aplikasi di lingkungan lokal Anda:
   ## Kredensial Akun uji coba
   - admin@gmail.com|password123
   - kasir@gmail.com|password123
+```
 
 ## ⚡ Catatan Pemeliharaan & Troubleshooting
 
