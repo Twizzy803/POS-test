@@ -17,9 +17,9 @@ Untuk memastikan aplikasi berjalan dengan optimal, proyek ini dikembangkan dan d
 
 Aplikasi POS ini dirancang dengan alur kerja yang terintegrasi antara hak akses pengguna dan manajemen data sebagai berikut:
 
-1. **Autentikasi & Pengalihan Berbasis Peran (Role Redirect):**
+1. **Autentikasi & Pengalihan Berbasis Peran (Gate Redirect):**
    - Pengguna melakukan login melalui halaman berkode warna minimalis.
-   - Setelah sukses, `RoleMiddleware` akan memeriksa kolom `role` pada database. 
+   - Setelah sukses, sistem akan memeriksa hak akses pengguna menggunakan **Gate** yang telah didaftarkan pada Service Provider (`access-admin` dan `access-kasir`).
    - Jika masuk sebagai **Admin**, pengguna diarahkan ke rute `/admin/dashboard`. Jika masuk sebagai **Kasir**, pengguna langsung diarahkan ke rute `/kasir/order`.
 
 2. **Manajemen Data Master (Khusus Admin):**
@@ -54,4 +54,14 @@ Ikuti langkah-langkah berikut untuk memasang aplikasi di lingkungan lokal Anda:
   ## Kredensial Akun uji coba
   - admin@gmail.com|password123
   - kasir@gmail.com|password123
+
+## ⚡ Catatan Pemeliharaan & Troubleshooting
+
+Jika Anda melakukan modifikasi pada hak akses atau mengalami kendala pemantulan halaman (*403 Unauthorized / Route Not Found*), pastikan:
+1. Konfigurasi `Gate::define` sudah aktif di dalam `AppServiceProvider` (atau `AuthServiceProvider` tergantung versi Laravel Anda).
+2. Jalankan perintah pembersihan cache memori Laravel berikut di terminal:
+   ```bash
+   php artisan route:clear
+   php artisan view:clear
+   php artisan cache:clear
 
