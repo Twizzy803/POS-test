@@ -37,7 +37,7 @@ Aplikasi POS ini dirancang dengan alur kerja yang terintegrasi antara hak akses 
    - Sistem akan membuat nomor invoice unik, mengurangi stok asli di database MySQL, dan menyimpan detailnya.
    - Kasir dapat melihat kembali semua nota yang sukses pada halaman **Riwayat Transaksi**.
 
-   ## 🚀 Panduan Instalasi & Cara Menjalankan
+## 🚀 Panduan Instalasi & Cara Menjalankan
 
 Ikuti langkah-langkah berikut untuk memasang aplikasi di lingkungan lokal Anda:
 ```bash
