@@ -40,7 +40,7 @@ Aplikasi POS ini dirancang dengan alur kerja yang terintegrasi antara hak akses 
    ## 🚀 Panduan Instalasi & Cara Menjalankan
 
 Ikuti langkah-langkah berikut untuk memasang aplikasi di lingkungan lokal Anda:
-
+```bash
 1.  git clone https://github.com/Twizzy803/POS-test.git
 2.  composer install
 3.  pnpm install
